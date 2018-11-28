@@ -1,0 +1,12 @@
+
+
+All in all HP1.txt contains 84513 words. J.K. Rowling uses 6152 different word forms in HP1.txt. 
+The type-token-ratio (the different types multiplied with 100, divided through the number of tokens) is: 7.28
+(The higher this number is, the richer the vocabulary.)
+
+36697 of the words are stopwords, 47816 are content words. 
+This makes a relation of 43.42% stopwords and 56.58% content words.
+
+
+HP1.txt contains 2.32% positive words and 2.73% negative words. This makes a sentiment relation of 1.18. 
+(The larger this number is, the more negative words are being used.)

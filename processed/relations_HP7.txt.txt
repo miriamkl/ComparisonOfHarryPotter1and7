@@ -1,0 +1,12 @@
+
+
+All in all HP7.txt contains 200120 words. J.K. Rowling uses 12197 different word forms in HP7.txt. 
+The type-token-ratio (the different types multiplied with 100, divided through the number of tokens) is: 6.09
+(The higher this number is, the richer the vocabulary.)
+
+130852 of the words are stopwords, 69268 are content words. 
+This makes a relation of 65.39% stopwords and 34.61% content words.
+
+
+HP7.txt contains 2.46% positive words and 3.60% negative words. This makes a sentiment relation of 1.46. 
+(The larger this number is, the more negative words are being used.)

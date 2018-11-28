@@ -1,0 +1,26 @@
+
+
+These are the proportions of the main persons occuring in HP1.txt: 
+1. Harry: 1.44%
+2. Ron: 0.49%
+3. Hagrid: 0.40%
+4. Hermione: 0.30%
+5. Professor: 0.21%
+6. Snape: 0.17%
+7. Dumbledore: 0.16%
+8. Dudley: 0.14%
+9. Uncle: 0.13%
+10. Malfoy: 0.13%
+
+
+These are the proportions of the main persons occuring in HP7.txt: 
+1. Harry: 1.44%
+2. Hermione: 0.55%
+3. Ron: 0.53%
+4. Dumbledore: 0.24%
+5. Voldemort: 0.18%
+6. Snape: 0.12%
+7. Death: 0.12%
+8. Potter: 0.10%
+9. Weasley: 0.08%
+10. Lupin: 0.08%
