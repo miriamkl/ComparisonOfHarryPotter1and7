@@ -26,24 +26,24 @@ Which creature would you be unwilling to kiss?'\n\n";
 @stopwordsCap = qw(A About Above After Again Against All Am An And Any Are Aren't As At Be Because Been Before Being Below Between Both But By Can't Cannot Could Couldn't Did Didn't Do Does Doesn't Doing Don't Down During Each Few For From Further Had Hadn't Has Hasn't Have Haven't Having He He'd He'll He's Her Here Here's Hers Herself Him Himself His How How's I I'd I'll I'm I've If In Into Is Isn't It It's Its Itself Let's Me More Most Mustn't My Myself No Nor Not Of Off On Once Only Or Other Ought Our Ours Ourselves Out Over Own Same Shan't She She'd She'll She's Should Shouldn't So Some Such Than That That's The Their Theirs Them Themselves Then There There's These They They'd They'll They're They've This Those Through To Too Under Until Up Very Was Wasn't We Well We'd We'll We're We've Were Weren't What What's When When's Where Where's Which While Who Who's Whom Why Why's With Won't Would Wouldn't You You'd You'll You're You've Your Yours Yourself Yourselves);
 
 #opens a directory and saves the filenames in an array 
-opendir (OLD, 'C:\\Users\\miria\\Documents\\SpeechandLanguageProcessing\\2_SS17\\Perl\\PerlProj\\originaltext') or die "Could not open directory with unprocessed texts."; 
+opendir (OLD, 'originaltext') or die "Could not open directory with unprocessed texts."; 
 @textsOld = readdir (OLD);			   
 closedir (OLD);
 
 
 #to get the old files
 @harrys = grep(/\.txt/,@textsOld);
-open(CSV, ">:utf8", "C:\\Users\\miria\\Documents\\SpeechandLanguageProcessing\\2_SS17\\Perl\\PerlProj\\processed\\infos.csv") or die "Could not open csv file."; #opens csv file
+open(CSV, ">:utf8", "processed\\infos.csv") or die "Could not open csv file."; #opens csv file
 print CSV "title\ttokens\ttypes\tTTR\tstopwords\tcontent words\tsad words\thappy words\t relation sentiment\n";
-open(PERS, ">:utf8", "C:\\Users\\miria\\Documents\\SpeechandLanguageProcessing\\2_SS17\\Perl\\PerlProj\\processed\\personsOfHarryPotter.txt")  or die "Could not open info file.";
+open(PERS, ">:utf8", "processed\\personsOfHarryPotter.txt")  or die "Could not open info file.";
 
 
 
 #MAIN PART OF THE PROGRAM
 #loops through both of the texts
 foreach $harry (@harrys){
-open(HP, "<:utf8", "C:\\Users\\miria\\Documents\\SpeechandLanguageProcessing\\2_SS17\\Perl\\PerlProj\\originaltext\\$harry")  or die "Could not open original text.";
-open(INFO, ">:utf8", "C:\\Users\\miria\\Documents\\SpeechandLanguageProcessing\\2_SS17\\Perl\\PerlProj\\processed\\relations_$harry.txt")  or die "Could not open info file.";
+open(HP, "<:utf8", "originaltext\\$harry")  or die "Could not open original text.";
+open(INFO, ">:utf8", "processed\\relations_$harry.txt")  or die "Could not open info file.";
 
 while (<HP>){
 	push (@HPArray, "$_"); #array with complete text
